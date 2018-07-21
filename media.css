@@ -1,0 +1,77 @@
+@media (max-width: 1024px) {
+
+    .nav-yellow,
+    .nav-black {
+        font-size: 12px;
+    }
+
+    ul.navbar li ul {
+        font-size: 10px;
+    }
+
+
+    #black > div.test > h1 {
+        font-size: 90px;
+    }
+    #yellow > div.test > h1 {
+        font-size: 90px;
+    }
+
+    #black > div.test {
+        margin-top: 60%;
+    }
+    #yellow > div.test {
+        margin-top: 90%;
+    }
+}
+
+@media (max-width: 920px) {
+
+    .nav-black {
+        width: 50%;
+    }
+
+    .nav-yellow {
+        width: 75%;
+    }
+
+    #black > div.test {
+        margin-top: 60%;
+    }
+    #yellow > div.test {
+        margin-top: 90%;
+    }
+
+    #black > div.test > h1 {
+        font-size: 70px;
+    }
+    #yellow > div.test > h1 {
+        font-size: 70px;
+    }
+
+    form {
+        max-width: 50%;
+    }
+
+}
+
+@media (max-width: 640px) {
+    h2 {
+        font-size: 20px;
+    }
+    body {
+        font-size: 15px;
+    }
+    form {
+        max-width: 60%;
+    }
+
+    #black > div.test {
+        margin-top: 100%;
+    }
+    #yellow > div.test {
+        margin-top: 150%;
+    }
+
+}
+

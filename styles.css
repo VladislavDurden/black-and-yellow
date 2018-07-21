@@ -1,0 +1,308 @@
+* {
+    font-family: 'Archivo Black', sans-serif, bold;
+    font-weight: bold !important;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+}
+
+body{
+    margin: 0;
+}
+
+h2{
+    font-size: 30px;
+}
+
+.container {
+    max-width: 980px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.decor {
+    display: inline-block;
+    position: relative;
+    width: 12.5%;
+    border-top: 2px solid;
+    border-color: #ffe100;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.decor > div {
+    width: 33.3%;
+    margin: 0 auto;
+    min-height: 5px;
+    background: #ffe100;
+}
+
+.header {
+
+    background-image: url(img/1.jpg);
+    background-size: cover;
+    min-height: 750px;
+    position: relative;
+    clip-path: polygon(65% 100%, 100% 95%, 100% 0, 0 0, 0 90%);
+
+}
+
+
+#black {
+
+    width: 60%;
+    min-height: 750px;
+    background: black;
+    float: left;
+    opacity: 0.9;
+}
+
+#yellow {
+
+    width: 40%;
+    min-height: 750px;
+    background: #ffe100;
+    float: right;
+    opacity: 0.75;
+}
+
+#yellow > div.test {
+    margin-top: 60%;
+    min-height: 90px;
+}
+
+#yellow > div.test > h1 {
+    float: left;
+    font-size: 100px;
+    color: black;
+    margin: 0 auto;
+
+}
+
+#black > div.test {
+    margin-top: 40%;
+    min-height: 90px;
+}
+
+#black > div.test > h1 {
+    float: right;
+    font-size: 100px;
+    color: #ffe100;
+    margin: 0 auto;
+}
+
+
+.middle {
+    color: #222;
+    margin-top: -50px;
+    margin-bottom: -50px;
+    padding: 100px 10px 0 10px;
+    background: white;
+    /*    max-width: 980px;*/
+    min-height: 550px;
+}
+
+.form {
+    background-image: url(img/2.jpg);
+    background-size: cover;
+    min-height: 750px;
+    position: relative;
+    clip-path: polygon(35% 0, 100% 10%, 100% 100%, 0 100%, 0 5%);
+}
+
+#black1 {
+    padding-top: 50px;
+    width: 100%;
+    min-height: 750px;
+    background: black;
+    opacity: 0.8;
+    color: white;
+}
+
+
+
+/*MENU*/
+
+.nav-black {
+    display: inline-block;
+    float: right;
+    color: #ffe100;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.nav-yellow {
+    display: inline-block;
+    float: left;
+    color: #222;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.nav-black ul.navbar {
+    background: #ffe100;
+    margin: 1em 0;
+    float: right;
+}
+
+.nav-yellow ul.navbar {
+    background: black;
+    margin: 1em 0;
+    float: left;
+}
+
+ul.navbar li {
+    list-style-type: none;
+    float: left;
+    margin: 0;
+    position: relative;
+}
+
+ul.navbar li a {
+    display: block;
+    padding: 13px 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all .2s ease-in-out;
+    color: #222;
+}
+
+.nav-black > ul.navbar > li{
+    float: right;
+
+}
+
+.nav-yellow ul.navbar{
+    padding-left: 0;
+    padding-right: 40px;
+}
+
+.nav-yellow ul.navbar li a {
+    color: #ffe100;
+}
+
+.nav-black ul.navbar li ul li a {
+    color: #ffe100;
+    float: left;
+}
+
+.navbar {
+    border-radius: 0;
+}
+
+ul.navbar li a:hover,
+ul.navbar li:hover > a {
+    color: #fff !important;
+}
+
+ul.navbar li ul {
+/*    margin: 0;*/
+    position: absolute;
+    background: black;
+    left: 100%;
+    font-size: 12px;
+    visibility: hidden;
+    z-index: 99;
+    transition: all .1s ease;
+}
+
+.nav-black ul.navbar li ul li{
+    right: 50%;
+}
+
+ul.navbar ul li {
+    float: none;
+}
+
+ul.navbar li:hover > ul {
+    opacity: 1;
+    visibility: visible;
+    left: 0;
+    max-height: 250px
+}
+
+ul.navbar > li:hover > ul {
+    opacity: 1;
+    visibility: visible;
+    top: 100%;
+    left: 0;
+}
+
+ul.navbar li > ul ul {
+    top: 0;
+    left: 90%;
+}
+
+ul.navbar li > ul li:hover > ul {
+    left: 100%;
+}
+
+
+/*FORM*/
+
+form {
+    margin: 0 auto;
+    max-width: 40%;
+    box-sizing: border-box;
+    padding: 40px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, .45);
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, .45);
+}
+
+/* Стили полей ввода */
+
+.textbox {
+    height: 50px;
+    width: 100%;
+    background: #222;
+    border-radius: 3px;
+    border: #777 2px solid;
+    box-sizing: border-box;
+    font-size: 16px;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+
+/* Стили текстового поля */
+
+.message {
+    background: #222;
+    width: 100%;
+    height: 120px;
+    border: #777 2px solid;
+    box-sizing: border-box;
+    -moz-border-radius: 3px;
+    font-size: 16px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    display: block;
+    padding: 10px;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+/* Базовые стили кнопки */
+
+.button {
+    height: 50px;
+    width: 100%;
+    border-radius: 3px;
+    border: rgba(0, 0, 0, .3) 0px solid;
+    box-sizing: border-box;
+    padding: 10px;
+    background: #ffe100;
+    color: #222;
+    font-weight: 400;
+    font-size: 16pt;
+    transition: background .4s;
+    cursor: pointer;
+}
+
+/* Изменение фона кнопки при наведении */
+
+.button:hover {
+    background: #222;
+    color: #ffe100;
+}
